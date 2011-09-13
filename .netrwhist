@@ -1,7 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/oh/Sites/phonegap-plugins/iPhone'
-let g:netrw_dirhist_2='/Users/oh/Sites/john_mcneil_studio'
-let g:netrw_dirhist_3='/Users/oh/Sites/dynamick'
-let g:netrw_dirhist_4='/Users/oh/Sites/john_mcneil_studio'
-let g:netrw_dirhist_5='/Users/oh/Sites/uxreview'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/oh/Sites/dailykos'
+let g:netrw_dirhist_2='/Users/oh/Sites/dk4-perl'
+let g:netrw_dirhist_3='/Users/oh/Sites/uxreview'
+let g:netrw_dirhist_4='/Users/oh/Sites/dailykos'
+let g:netrw_dirhist_5='/Users/oh/Sites/dk4-perl'
+let g:netrw_dirhist_6='/Users/oh/Sites/dailykos'
+let g:netrw_dirhist_7='/Users/oh/Sites/dk4-perl'
+let g:netrw_dirhist_8='/Users/oh/Sites/uxreview'
+let g:netrw_dirhist_9='/Users/oh/Sites/dailykos'
