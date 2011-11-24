@@ -207,6 +207,9 @@ set ttymouse=xterm2
 "tell the term has 256 colors
 set t_Co=256
 
+"use system clipboard
+set clipboard=unnamed
+
 "hide buffers when not displayed
 set hidden
 
