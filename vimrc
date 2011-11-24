@@ -11,11 +11,11 @@ set history=1000
 set showcmd     "show incomplete cmds down the bottom
 set showmode    "show current mode down the bottom
 
-set incsearch   "find the next match as we type the search
-set hlsearch    "hilight searches by default
+"set incsearch   "find the next match as we type the search
+"set hlsearch    "hilight searches by default
 
-set nowrap      "dont wrap lines
-set linebreak   "wrap lines at convenient points
+"set nowrap      "dont wrap lines
+"set linebreak   "wrap lines at convenient points
 
 "statusline setup
 set statusline=%f       "tail of the filename
@@ -205,7 +205,7 @@ set mouse=a
 set ttymouse=xterm2
 
 "tell the term has 256 colors
-set t_Co=256
+set t_Co=0
 
 "use system clipboard
 set clipboard=unnamed
@@ -277,3 +277,6 @@ if has("gui")
 	let moria_monochrome = 1
 	colorscheme moria
 endif
+let g:SuperTabDefaultCompletionType = "context"
+filetype indent off
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
