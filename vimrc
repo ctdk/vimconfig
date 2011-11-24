@@ -278,6 +278,6 @@ if has("gui")
 	let moria_monochrome = 1
 	colorscheme moria
 endif
-let g:SuperTabDefaultCompletionType = "context"
+"let g:SuperTabDefaultCompletionType = "context"
 filetype indent off
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
