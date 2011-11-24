@@ -232,6 +232,9 @@ nnoremap <c-f> :FuzzyFinderTextMate<CR>
 "map Q to something useful
 noremap Q gq
 
+"NERDTreeToggle
+nnoremap gt :NERDTreeToggle
+
 "make Y consistent with C and D
 nnoremap Y y$
 
