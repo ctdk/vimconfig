@@ -168,9 +168,9 @@ function! s:Median(nums)
 endfunction
 
 "indent settings
-set shiftwidth=4
-set softtabstop=4
-set expandtab
+"set shiftwidth=4
+"set softtabstop=4
+"set expandtab
 set autoindent
 
 "folding settings
@@ -183,8 +183,8 @@ set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
 set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
 
 "display tabs and trailing spaces
-set list
-set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+"set list
+"set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 
 set formatoptions-=o "dont continue comments when pushing o/O
 
@@ -198,7 +198,7 @@ filetype plugin on
 filetype indent on
 
 "turn on syntax highlighting
-syntax on
+syntax off
 
 "some stuff to get the mouse going in term
 set mouse=a
@@ -234,22 +234,6 @@ nnoremap Y y$
 "mark syntax errors with :signs
 let g:syntastic_enable_signs=1
 
-"snipmate setup
-source ~/.vim/snippets/support_functions.vim
-autocmd vimenter * call s:SetupSnippets()
-function! s:SetupSnippets()
-
-    "if we're in a rails env then read in the rails snippets
-    if filereadable("./config/environment.rb")
-        call ExtractSnips("~/.vim/snippets/ruby-rails", "ruby")
-        call ExtractSnips("~/.vim/snippets/eruby-rails", "eruby")
-    endif
-
-    call ExtractSnips("~/.vim/snippets/html", "eruby")
-    call ExtractSnips("~/.vim/snippets/html", "xhtml")
-    call ExtractSnips("~/.vim/snippets/html", "php")
-endfunction
-
 "visual search mappings
 function! s:VSetSearch()
     let temp = @@
@@ -284,3 +268,9 @@ function! s:HighlightLongLines(width)
         echomsg "Usage: HighlightLongLines [natural number]"
     endif
 endfunction
+
+if has("gui")
+	let moria_style = "black"
+	let moria_monochrome = 1
+	colorscheme moria
+endif
