@@ -13,6 +13,7 @@ set showmode    "show current mode down the bottom
 
 "set incsearch   "find the next match as we type the search
 "set hlsearch    "hilight searches by default
+set nohlsearch
 
 "set nowrap      "dont wrap lines
 "set linebreak   "wrap lines at convenient points
@@ -36,13 +37,13 @@ set statusline+=%r      "read only flag
 set statusline+=%m      "modified flag
 
 "display a warning if &et is wrong, or we have mixed-indenting
-set statusline+=%#error#
-set statusline+=%{StatuslineTabWarning()}
-set statusline+=%*
+"set statusline+=%#error#
+"set statusline+=%{StatuslineTabWarning()}
+"set statusline+=%*
 
-set statusline+=%{StatuslineTrailingSpaceWarning()}
+"set statusline+=%{StatuslineTrailingSpaceWarning()}
 
-set statusline+=%{StatuslineLongLineWarning()}
+"set statusline+=%{StatuslineLongLineWarning()}
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -235,7 +236,7 @@ noremap Q gq
 nnoremap Y y$
 
 "mark syntax errors with :signs
-let g:syntastic_enable_signs=1
+"let g:syntastic_enable_signs=1
 
 "visual search mappings
 function! s:VSetSearch()
