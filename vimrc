@@ -65,16 +65,16 @@ autocmd cursorhold,bufwritepost * unlet! b:statusline_trailing_space_warning
 
 "return '[\s]' if trailing white space is detected
 "return '' otherwise
-function! StatuslineTrailingSpaceWarning()
-    if !exists("b:statusline_trailing_space_warning")
-        if search('\s\+$', 'nw') != 0
-            let b:statusline_trailing_space_warning = '[\s]'
-        else
-            let b:statusline_trailing_space_warning = ''
-        endif
-    endif
-    return b:statusline_trailing_space_warning
-endfunction
+"function! StatuslineTrailingSpaceWarning()
+"    if !exists("b:statusline_trailing_space_warning")
+"        if search('\s\+$', 'nw') != 0
+"            let b:statusline_trailing_space_warning = '[\s]'
+"        else
+"            let b:statusline_trailing_space_warning = ''
+"        endif
+"    endif
+"    return b:statusline_trailing_space_warning
+"endfunction
 
 
 "return the syntax highlight group under the cursor ''
@@ -171,7 +171,7 @@ endfunction
 "set shiftwidth=4
 "set softtabstop=4
 "set expandtab
-set autoindent
+"set autoindent
 
 "folding settings
 set foldmethod=indent   "fold based on indent
@@ -195,7 +195,7 @@ set sidescroll=0
 
 "load ftplugins and indent files
 filetype plugin on
-"filetype indent on
+filetype indent off
 
 "turn on syntax highlighting
 syntax off
