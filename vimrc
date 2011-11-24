@@ -189,13 +189,13 @@ set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
 set formatoptions-=o "dont continue comments when pushing o/O
 
 "vertical/horizontal scroll off settings
-set scrolloff=3
-set sidescrolloff=7
-set sidescroll=1
+set scrolloff=0
+set sidescrolloff=0
+set sidescroll=0
 
 "load ftplugins and indent files
 filetype plugin on
-filetype indent on
+"filetype indent on
 
 "turn on syntax highlighting
 syntax off
@@ -250,15 +250,15 @@ vnoremap # :<C-u>call <SID>VSetSearch()<CR>??<CR>
 
 "jump to last cursor position when opening a file
 "dont do it when writing a commit log entry
-autocmd BufReadPost * call SetCursorPosition()
-function! SetCursorPosition()
-    if &filetype !~ 'commit\c'
-        if line("'\"") > 0 && line("'\"") <= line("$")
-            exe "normal! g`\""
-            normal! zz
-        endif
-    end
-endfunction
+"autocmd BufReadPost * call SetCursorPosition()
+"function! SetCursorPosition()
+"    if &filetype !~ 'commit\c'
+"        if line("'\"") > 0 && line("'\"") <= line("$")
+"            exe "normal! g`\""
+"            normal! zz
+"        endif
+"    end
+"endfunction
 
 "define :HighlightLongLines command to highlight the offending parts of
 "lines that are longer than the specified length (defaulting to 80)
