@@ -284,3 +284,12 @@ endif
 "let g:SuperTabDefaultCompletionType = "context"
 filetype indent off
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+let mapleader = ","
+let g:mapleader = ","
+map <leader>ss :setlocal spell!<cr>
+" Shortcuts using <leader>
+map <leader>sn ]s
+map <leader>sp [s
+map <leader>sa zg
+map <leader>s? z=
