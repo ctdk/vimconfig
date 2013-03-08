@@ -293,3 +293,5 @@ map <leader>sn ]s
 map <leader>sp [s
 map <leader>sa zg
 map <leader>s? z=
+" quick show line number
+map <leader>l :set nu!<CR>
