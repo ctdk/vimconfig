@@ -155,5 +155,9 @@ map <leader>s? z=
 " quick show line number
 map <leader>l :set nu!<CR>
 
+" communism and freedom
+map ,cccp :set sw=4 sts=4 expandtab<cr>
+map ,usa :set sw=8 sts=0 noexpandtab<cr>
+
 "turn on syntax highlighting
 syntax off

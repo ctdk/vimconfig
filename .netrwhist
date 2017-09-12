@@ -1,6 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/jeremy/rtcw/RtCW-14-Feb-11/Wolfenstein SP.app/Contents/Resources/qagame.bundle/Contents/Resources'
 let g:netrw_dirhist_2='/Users/jeremy/dailykos/config/initializers'
 let g:netrw_dirhist_3='/Users/jeremy/Desktop/df_osx/data/save/region1/raw/objects'
 let g:netrw_dirhist_4='/Users/jeremy/dailykos/spec/factories'
+let g:netrw_dirhist_5='/Users/jeremy.bingham/devops-stuff/devops/stacks/cloud-platform/efk-cluster/infrastructure/terraform.tfstate.d'
+let g:netrw_dirhist_6='/Users/jeremy.bingham/devops-stuff/devops/stacks/cloud-platform/efk-cluster/infrastructure/terraform.tfstate.d/cloud-platform'
+let g:netrw_dirhist_7='/Users/jeremy.bingham/devops-stuff/devops/jenkins/docker-builds'
+let g:netrw_dirhist_8='/Users/jeremy.bingham/devops-stuff/cloud-platform-chef/cookbooks/cloud-platform-drone/attributes'
+let g:netrw_dirhist_9='/Users/jeremy.bingham/devops-stuff/devops/modules/app_node_cloudinit_config'
