@@ -158,6 +158,8 @@ map <leader>l :set nu!<CR>
 " communism and freedom
 map ,cccp :set sw=4 sts=4 expandtab<cr>
 map ,usa :set sw=8 sts=0 noexpandtab<cr>
+" 2 space tabs are needed too. That's not exactly freedom either.
+map ,prc :set sw=2 sts=2 expandtab<cr>
 
 "turn on syntax highlighting
 syntax off
