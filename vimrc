@@ -141,9 +141,11 @@ if has("gui")
 	let moria_style = "black"
 	let moria_monochrome = 1
 	colorscheme moria
-	set guifont=Meslo_LG_S:h9
-	set columns=80
-	set lines=60
+	if has('win64') || has('win32')
+		set guifont=Meslo_LG_S:h9
+		set columns=80
+		set lines=60
+	endif
 endif
 "let g:SuperTabDefaultCompletionType = "context"
 filetype indent off
