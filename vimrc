@@ -110,7 +110,9 @@ filetype indent off
 
 "some stuff to get the mouse going in term
 set mouse=a
-set ttymouse=xterm2
+if !has('nvim')
+	set ttymouse=xterm2
+endif
 
 set t_Co=0
 
@@ -139,6 +141,9 @@ if has("gui")
 	let moria_style = "black"
 	let moria_monochrome = 1
 	colorscheme moria
+	set guifont=Meslo_LG_S:h9:cANSI:qDRAFT
+	set columns = 80
+	set lines = 60
 endif
 "let g:SuperTabDefaultCompletionType = "context"
 filetype indent off
