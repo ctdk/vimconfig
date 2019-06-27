@@ -16,6 +16,11 @@ set nohlsearch
 "statusline setup
 set statusline=%f       "tail of the filename
 
+" set fileformat to unix,dos if on windows
+if has('win64') || has('win32')
+	set fileformats=unix,dos
+endif
+
 "display a warning if fileformat isnt unix
 set statusline+=%#warningmsg#
 set statusline+=%{&ff!='unix'?'['.&ff.']':''}
