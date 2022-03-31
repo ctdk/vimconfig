@@ -19,7 +19,8 @@ set statusline=%f       "tail of the filename
 " set fileformat to unix,dos if on windows
 if has('win64') || has('win32')
 	set fileformats=unix,dos
-	set shell=c:/Program\ Files/PowerShell/6/pwsh.exe
+	set encoding=utf-8
+	set shell=c:/Progra~1/PowerShell/7/pwsh.exe
 	set shellcmdflag=-command
 	set shellquote=\"
 	set shellxquote=
